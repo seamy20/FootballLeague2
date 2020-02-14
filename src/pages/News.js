@@ -7,7 +7,7 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
 
 import { FixedNavActive, LoadPageContent } from '../components/JSfunctions/Utils';
 
-class Help extends React.Component {
+class News extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -68,29 +68,7 @@ class Help extends React.Component {
     return (
       <div>
       <header>
-        <MDBNavbar id="custom-nav-expand" className="sticky-navbar-shadow sticky-top navbar-expand-lg navbar-dark light-blue scrolling-navbar">
-          <MDBNavbarBrand href="/">
-            <img id="Logo"  className="Page-Logo largeLogo" alt={this.logoText}/>
-          </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={this.onClick}/>
-          <MDBCollapse isOpen={this.state.collapse} navbar="navbar">
-            <MDBNavbarNav left="left"></MDBNavbarNav>
-            <MDBNavbarNav id="custom-nav-bar-sticky" right="right" className="display-8 text-uppercase pr-5">
-              <MDBNavItem>
-                <MDBNavLink className="orange-text" to="/help/faq">FAQ's</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="/help/assistancewithvulnerability">VULNERABLITY</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink to="/help/energyefficiency">Energy Efficiency</MDBNavLink>
-              </MDBNavItem>
-              {/* <MDBNavItem>
-                <MDBNavLink to="/help/trackcomplaint">Track Complaint</MDBNavLink>
-              </MDBNavItem> */}
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBNavbar>
+
 
 
         <MDBContainer fluid className="text-center">
@@ -106,4 +84,4 @@ class Help extends React.Component {
   }
 }
 
-export default Help;
+export default News;

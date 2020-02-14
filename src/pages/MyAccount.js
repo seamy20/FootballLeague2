@@ -49,15 +49,18 @@ class MyAccount extends React.Component {
           <MDBCollapse isOpen={this.state.collapse} navbar="navbar">
             <MDBNavbarNav left="left"></MDBNavbarNav>
               <MDBNavbarNav id="custom-nav-bar-sticky" right="right" className="display-8 text-uppercase pr-5">
-                <MDBNavItem>
-                  <MDBNavLink to="/forHomeTariffs">Tariffs</MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink to="/forHomeJoin">Join</MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink to="/forHomeMoving">Moving House</MDBNavLink>
-                </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/">Home</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/teams">Teams</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/reports">Match Reports</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to="/news">News</MDBNavLink>
+              </MDBNavItem>
               </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>

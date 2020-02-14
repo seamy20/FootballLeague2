@@ -55,13 +55,13 @@ class FixedNav extends React.Component {
             <MDBNavLink to="/">Home</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/about">About Us</MDBNavLink>
+            <MDBNavLink to="/teams">Teams</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/careers">Careers</MDBNavLink>
+            <MDBNavLink to="/reports">Match Reports</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/ordernow">Order Now</MDBNavLink>
+            <MDBNavLink to="/news">News</MDBNavLink>
           </MDBNavItem>
         </MDBNavbarNav>
       </MDBCollapse>

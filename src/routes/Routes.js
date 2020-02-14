@@ -4,9 +4,9 @@ import { Switch, Route } from 'react-router-dom';
 
 // Main Content (Top Nav Links)
 import ForHome from '../pages/ForHome.js'
-import ForBusiness from '../pages/ForBusiness.js'
-import About from '../pages/About.js'
-import Help from '../pages/Help.js'
+import MatchReports from '../pages/MatchReports.js'
+import Teams from '../pages/Teams.js'
+import News from '../pages/News.js'
 import MyAccount from '../pages/MyAccount.js'
 
 
@@ -17,9 +17,9 @@ class Routes extends React.Component {
     return (
       <Switch>
         <Route path="/" exact component={ForHome} />        
-        <Route path="/about" exact component={About} />
-        <Route path="/help" exact component={Help} />
-        <Route path="/careers" exact component={ForBusiness} />
+        <Route path="/teams" exact component={Teams} />
+        <Route path="/news" exact component={News} />
+        <Route path="/reports" exact component={MatchReports} />
         <Route path="/ordernow" exact component={MyAccount} />
         <Route path="/:id" component={WaitingComponent(Post)} />
       </Switch>

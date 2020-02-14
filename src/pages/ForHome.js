@@ -32,7 +32,7 @@ class ForHome extends React.Component {
         {
           id: "xczczxczxczxc",
           title:
-            "Replace an item in an array, by number, without mutation in JavaScript (ES6)"
+            "Click Here"
         },
         {
           id: "ZopfliPipelineCachedStorage",
@@ -40,37 +40,7 @@ class ForHome extends React.Component {
         },
         {
           id: "django-lock-decorator-with-django-redis",
-          title: "Django lock decorator with django-redis"
-        },
-        {
-          id: "django-html-validator-now-supports-django-2.x",
-          title: "django-html-validator now supports Django 2.x"
-        },
-        {
-          id: "quick-dog-piling-url-stresstest",
-          title: "Quick dog-piling (aka stampeding herd) URL stresstest"
-        },
-        {
-          id: "htmlminifier-in-use-on-this-blog-now",
-          title: "HTMLMinifier in use on this blog now"
-        },
-        {
-          id: "to-defer-or-to-async-javascript",
-          title: "To defer or to async JavaScript tags. That's the question."
-        },
-        {
-          id: "json_response_cache_page_decorator",
-          title:
-            "A good Django view function cache decorator for http.JsonResponse"
-        },
-        { id: "ripgrep", title: "The best grep tool in the world; ripgrep" },
-        {
-          id: "how-to-unset-aliases-set-by-oh-my-zsh",
-          title: "How to unset aliases set by Oh My Zsh"
-        },
-        {
-          id: "how-to-not-start-two-servers-on-the-same-port",
-          title: "How to NOT start two servers on the same port"
+          title: "Click Here"
         }
       ]
     };
@@ -421,10 +391,9 @@ console.log(w + " " + h);
 
             <MDBCol class="mainCardInfoSide">
               <div class="mainCardInfoSide">
-                  <h4>Foyle Wanderers Winners 2019/2020 </h4>
+                  <p class="mainCardTitle">Foyle Wanderers Winners 2019/2020 </p>
                   <p  id="wordwrap">Foyle Wanderes picked up their first ever league title in the north west Junior in 2019/2020. 
                   With the new campaign half way through it looks like BBOB are the team to catch</p>
-                  <a href="#" class="btn btn-primary">BUTTON</a>
               </div>
             </MDBCol>
 
@@ -445,14 +414,14 @@ console.log(w + " " + h);
                 return (
                   <div key={post.id}>
                   <li className="noStyle">
-                  <div class="card flex-row flex-wrap mb-3" >
-                    <div class="card-header border-0 mainCardImgSide">
-                        <img className="overlay rounded z-depth-1 blogCardImg" src={require('../images/lisahallywin.jpg')}/>
+                  <div class="card flex-row flex-wrap mb-3 blogCard" >
+                    <div class="card-header border-0 mainCardImgSide ">
+                        <img className="overlay rounded z-depth-1 blogCardImg " src={require('../images/lisahallywin.jpg')}/>
                     </div>
 
                     <MDBCol class="mainCardInfoSide">
                       <div class="mainCardInfoSide">
-                          <h4>Foyle Wanderers Winners 2019/2020 </h4>
+                          <p className="cardTitle">Foyle Wanderers Winners 2019/2020 </p>
                           <p  id="wordwrap">View Lisahally V Ardmore Match report. </p>
                           <MDBNavLink href="#" to={`/${post.id}`}>{post.title}Click to view</MDBNavLink>
                       </div>
