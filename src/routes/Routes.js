@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import ForHome from '../pages/ForHome.js'
 import MatchReports from '../pages/MatchReports.js'
 import Teams from '../pages/Teams.js'
+import TeamsPage from '../pages/TeamsPage/TeamPage.js'
 import News from '../pages/News.js'
 import MyAccount from '../pages/MyAccount.js'
 
@@ -18,6 +19,7 @@ class Routes extends React.Component {
       <Switch>
         <Route path="/" exact component={ForHome} />        
         <Route path="/teams" exact component={Teams} />
+        <Route path="/teams/teamspage" exact component={TeamsPage} />
         <Route path="/news" exact component={News} />
         <Route path="/reports" exact component={MatchReports} />
         <Route path="/ordernow" exact component={MyAccount} />

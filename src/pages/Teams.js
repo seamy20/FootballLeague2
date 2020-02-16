@@ -71,10 +71,20 @@ class Teams extends React.Component {
 
 
         <MDBContainer fluid className="text-center">
-          <MDBRow lg="12"className="helpPage">
-            <MDBCol >
-            </MDBCol>
-          </MDBRow>
+        <MDBRow className="view border-bottom">
+        <ul>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/bbob.jpg')}/></a></li>
+            <li><a href="/teams/teamspage" class="tooltipclass"><img height={52} src={require('../images/teamLogos/lisahally.jpg')}/></a></li>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/foyle_wanderers.png')}/></a></li>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/ardmroe.PNG')}/></a></li>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/donemana.jpg')}/></a></li>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/newbuildings.jpg')}/></a></li>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/claudy_rovers.jpg')}/></a></li>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/draperstown.jpg')}/></a></li>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/greysteel.jpg')}/></a></li>
+            <li><a href="" class="tooltipclass"><img height={52} src={require('../images/teamLogos/bbob.jpg')}/></a></li>
+          </ul>
+              </MDBRow>
 
         </MDBContainer>
       </header>

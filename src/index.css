@@ -2012,10 +2012,19 @@ height: 30px!important;
 }
 
 .fixture_result_table{
-  width:96%!important;
+  width:50%!important;
 }
 @media only screen and (max-width: 400px) {
   .fixture_result_table{
+    width:100%!important;
+  }
+}
+
+.playerTable{
+  width:67.1%!important;
+}
+@media only screen and (max-width: 400px) {
+  .playerTable{
     width:100%!important;
   }
 }
@@ -2108,4 +2117,67 @@ height: 30px!important;
 font-size: 15;
 font-weight: bold;
   }
+}
+
+
+#p0{
+  left: 50%; top: 0%; position: absolute;
+}
+#p1{
+  left: 0%; top: 25%; position: absolute;
+}
+#p2{
+  left: 33%; top: 25%; position: absolute;
+}
+#p3{
+  left: 67%; top: 25%; position: absolute;
+}
+#p4{
+  left: 100%; top: 25%; position: absolute;
+}
+#p5{
+  left: 0%; top: 67%; position: absolute;
+}
+#p6{
+  left: 33%; top: 67%; position: absolute;
+}
+#p7{
+  left: 67%; top: 67%; position: absolute;
+}
+#p8{
+  left: 100%; top: 67%; position: absolute;
+}
+#p9{
+  left: 33%; top: 100%; position: absolute;
+}
+#p10{
+  left: 67%; top: 100%; position: absolute;
+}
+.teamBanner{
+   width:100%!important; 
+  height:350px!important;
+}
+@media only screen and (max-width: 400px) {
+  .teamBanner{
+    /* width:100%!important; */
+    height:200px!important;
+  }
+}
+.teamBannerInfoTitle{
+  font-size: 35px!important;
+  margin-left: 5%!important;
+}
+@media only screen and (max-width: 400px) {
+ .teamBannerInfoTitle{
+  font-size: 20px!important;
+  margin-top: 18px!important;
+ }
+}
+.teamBannerInfoPara{
+  font-size: 15px!important;
+}
+@media only screen and (max-width: 400px) {
+ .teamBannerInfoPara{
+  font-size: 12px!important;
+ }
 }
