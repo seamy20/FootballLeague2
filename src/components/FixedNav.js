@@ -52,16 +52,16 @@ class FixedNav extends React.Component {
         <MDBNavbarNav left="left"></MDBNavbarNav>
         <MDBNavbarNav id="custom-nav-bar-sticky" right="right" className="display-8 text-uppercase">
           <MDBNavItem>
-            <MDBNavLink to="/">Home</MDBNavLink>
+            <MDBNavLink className="textLink" to="/">Home</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/teams">Teams</MDBNavLink>
+            <MDBNavLink className="textLink"to="/teams">Teams</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/reports">Match Reports</MDBNavLink>
+            <MDBNavLink className="textLink"to="/reports">Match Reports</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/news">News</MDBNavLink>
+            <MDBNavLink className="textLink"to="/news">News</MDBNavLink>
           </MDBNavItem>
         </MDBNavbarNav>
       </MDBCollapse>

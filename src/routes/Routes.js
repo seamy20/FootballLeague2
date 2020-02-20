@@ -12,6 +12,7 @@ import MyAccount from '../pages/MyAccount.js'
 
 
 const Post = lazy(() => import("../components/post"));
+const TeamPost = lazy(() => import("../components/TeamsPost"));
 
 class Routes extends React.Component {
   render() {
@@ -24,12 +25,20 @@ class Routes extends React.Component {
         <Route path="/reports" exact component={MatchReports} />
         <Route path="/ordernow" exact component={MyAccount} />
         <Route path="/:id" component={WaitingComponent(Post)} />
+        <Route path="/teams/teamspage:id2" component={WaitingComponent2(TeamPost)} />
       </Switch>
     );
   }
 }
 
 function WaitingComponent(Component) {
+  return props => (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Component {...props} />
+    </Suspense>
+  );
+}
+function WaitingComponent2(Component) {
   return props => (
     <Suspense fallback={<div>Loading...</div>}>
       <Component {...props} />

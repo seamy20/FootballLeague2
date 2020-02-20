@@ -1949,15 +1949,19 @@ height: 30px!important;
 
 
 .menuBarColor{
-  background-color: #156F2F;
+   background-color: rgba(223, 219, 219, 0.7); 
+  
+}
+.textLink{
+  color:black!important;
 }
 
 .homeContainer{
   border-style: solid;
-  border-left-color: white;
   border-left-width: 200px!important;
-  border-right-color:white;
-  border-right-width: 200px!important;
+  border-right-width: 200px!important; 
+   border-image: url(./images/grassBackground2.jpg) 200 200 round;
+
   /* border-image: url(./images/greytexture.jpg) 200 repeat; */
   box-shadow: 10px 50px 50px rgb(7, 6, 6);
 }
@@ -2021,7 +2025,8 @@ height: 30px!important;
 }
 
 .playerTable{
-  width:67.1%!important;
+  width:100%!important;
+  padding-left: 2.5%!important;
 }
 @media only screen and (max-width: 400px) {
   .playerTable{
@@ -2064,8 +2069,15 @@ height: 30px!important;
 
  
 .mainCardImgSide{
-  margin-top:2%;
+  margin-top:-5%;
   width:50%;
+}
+@media only screen and (max-width: 600px) {
+  .mainCardImgSide{
+    margin-top:-5%;
+    margin-left:15%;
+    width:70%;
+  }
 }
 .mainPageCardImg{
   width:100%;
@@ -2083,6 +2095,11 @@ height: 30px!important;
 .blogCardImg{
   width:100%!important;
   height:200px!important;
+}
+.blogCardImgTeamPage{
+  width:130%!important;
+  height:150px!important;
+  margin-left: -18%;
 }
 
 
@@ -2180,4 +2197,90 @@ font-weight: bold;
  .teamBannerInfoPara{
   font-size: 12px!important;
  }
+}
+
+.formationbackground{
+  width:100%;
+  
+}
+.test123{
+  width:100%!important;
+  height:500px!important;
+}
+
+.TEAMBLOG{
+  margin-left:-50px!important;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+.cardCss{
+  width:115%!important;
+  margin-left:-12%!important;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .cardCss {
+    width: 100%;
+  }
+}
+.cardCssTeamPage{
+  width:115%!important;
+  margin-left:-12%!important;
+  font-size: 12px!important;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .cardCssTeamPage {
+    width: 100%;
+  }
+}
+
+div.cardList {
+  background-color: #F7F7F7;
+  width: 100%;
+  height: 400px;
+  overflow: auto;
 }

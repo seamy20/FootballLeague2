@@ -21,7 +21,21 @@ class TeamPage extends React.Component {
       tariffOverlay1: false,
       chatBotOverlay1: false,
       players: [],
-
+      blogTeamposts: [
+        {
+          id2: "team1",
+          title:
+            "Blog Post 1"
+        },
+        {
+          id2: "team2",
+          title: "Blog Post 2"
+        },
+        {
+          id2: "team3",
+          title: "Blog Post 3"
+        }
+      ]
     };
     this.onClick = this.onClick.bind(this);
     this.logoText = "";
@@ -110,16 +124,16 @@ class TeamPage extends React.Component {
 
 
     return (
-      <div>
+      <div className="homeContainer">
       <header>
 
 
-        <MDBContainer fluid className="text-center">
-        <MDBRow className="view border-bottom">
-        <MDBCol lg="6" md="12" className="full-img">
+        <MDBContainer fluid className="boxshadow">
+        <MDBRow className="view border-bottom ml-1">
+        <MDBCol lg="6" md="12" className="full-img ">
                   <img className="teamBanner" src={require('../../images/lisahallyteampic.jpg')}/>
                 </MDBCol>
-                <MDBCol lg="6" md="12" className="no-padding">
+                <MDBCol lg="5" md="12" className="no-padding">
                   <p className="teamBannerInfoTitle Page-Title display-5 black-text text-left text-uppercase mt-5 ml-5 bold">Lissahally Football Club</p>
                   <p className="teamBannerInfoPara black-text text-left text-uppercase ml-5">
                     Does your business need electricity?
@@ -140,12 +154,10 @@ class TeamPage extends React.Component {
                   <a className="btn btn-default btn-orange Ripple-parent orange full-width float-left ml-5" href="/business/callback">Contact Us</a>
                 </MDBCol>
               </MDBRow>
-              <MDBRow className="teamFormation mt-4 mb-4">
-
-
-                <MDBCol lg="3" md="12" className="full-img">
-                  <MDBCard style={{ width: "22rem" }}>
-                    <MDBCardImage className="img-fluid" src={require('../../images/formationbackground.png')}  waves />
+              <MDBRow className="teamFormation mt-4  ml-1">
+                <MDBCol lg="4" md="12" className="full-img ">
+                  <MDBCard >
+                    <MDBCardImage className="img-fluid formationbackground" src={require('../../images/formationbackground.png')}  waves />
                     {/* <MDBCardBody>
                       <MDBCardTitle></MDBCardTitle>
                       <MDBCardText>
@@ -154,10 +166,39 @@ class TeamPage extends React.Component {
                   </MDBCard>
                 </MDBCol>
                 <MDBCol lg="4" md="12" className="playerTable">
-                <ReactTableFixedColumns className="playerTable" data={players} data={players} columns={Playerscolumns} showPagination={false} pageSize={13}/>  
+                <ReactTableFixedColumns className="playerTable" data={players} data={players} columns={Playerscolumns} showPagination={false} pageSize={15}/>  
                 </MDBCol>
               </MDBRow>
-              
+
+
+              <MDBRow className=" mt-4">
+                <MDBCol lg="4" md="12" className="cardList">
+                <ul>
+                    {this.state.blogTeamposts.map(TeamPost => {
+                      return (
+                        <div key={TeamPost.id2}>
+                        <li className="noStyle">
+                        <div class="column card flex-row flex-wrap mb-3 cardCssTeamPage" >
+                          <div class="card-header border-0 mainCardImgSide ">
+                              <img className="overlay rounded z-depth-1 blogCardImgTeamPage " src={require('../../images/lisahallywin.jpg')}/>
+                          </div>
+                          <MDBCol class="">
+                            <div class="">
+                                <p className="cardTitle">Foyle Wanderers Winners 2019/2020 </p>
+                                <p  id="wordwrap">View Lisahally V Ardmore Match report. </p>
+                                <MDBNavLink href="#" to={`/teams/teamspage/${TeamPost.id2}`}>{TeamPost.title}Click to view</MDBNavLink>
+                            </div>
+                          </MDBCol>
+                        </div>
+                        </li>
+                        </div>
+                      );
+                    })}
+                    </ul>
+                </MDBCol>
+              </MDBRow>
+
+
 
         </MDBContainer>
       </header>
